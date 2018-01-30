@@ -8,3 +8,5 @@ Flappy Bird was a side-scrolling mobile game featuring 2D retro style graphics. 
  CLICK "SPACE" TO MAKE FABY FLY.
  
  SCREENSHOTS: 
+![game](https://user-images.githubusercontent.com/26222499/35576425-eff7025e-0604-11e8-9e58-266b05472564.png)
+![gameover](https://user-images.githubusercontent.com/26222499/35576426-f054afa8-0604-11e8-8494-aeba0b473010.png)
