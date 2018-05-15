@@ -79,6 +79,7 @@ class Bird():
         self.draw()
         if self.y >= height:
             screen.blit(gameover_img, (0,0))
+            draw_score("YOUR SCORE is " + str(score))
             running = False
 
     def update(self, time_passed):
@@ -165,11 +166,18 @@ def draw_background_img():
         for y in xrange(height / background_img.get_height() + 1):
             screen.blit(background_img, (x * 100, y * 100))
 
+def draw_score(text):
+    font = pygame.font.Font("resources/fonts/MONACO.TTF", 40)
+    survivedtext = font.render(str(text), True, (255, 255, 255))
+    textRect = survivedtext.get_rect()
+    textRect.topleft = [150, 250]
+    screen.blit(survivedtext, textRect)
+    
 def draw_text(text):
     font = pygame.font.Font("resources/fonts/MONACO.TTF", 24)
     survivedtext = font.render(str(text), True, (0, 0, 0))
     textRect = survivedtext.get_rect()
-    textRect.topleft = [10, 10]
+    textRect.topleft = [50, 100]
     screen.blit(survivedtext, textRect)
 
 pipes = []
